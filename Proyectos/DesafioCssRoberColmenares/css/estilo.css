@@ -1,0 +1,43 @@
+
+div {
+    color: white;
+    text-align: left;
+    background-color: gray;
+    background-image: url("../img/alquilerFondo.jpg");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    margin: 5%;
+    padding: 5%;
+    background-size: cover;
+}
+
+table {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.art {
+    color: white;
+    font-size: 2vw;
+    font-weight: bold;
+    text-align: left;
+    background-color: gray;
+}
+
+img {
+    width: 100%;
+    max-width: 400px;
+}
+
+footer {
+    background-color: rgba(0, 0, 197, 0.692);
+    text-align: center;
+    padding: 1em 0;
+}
+
+body {
+    background-color: gray;
+    color: white;
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,158 @@
+
+header{
+    
+    padding-top: 20px; 
+    color: white;
+    background-color: #6c757d; 
+}
+h1{
+    text-align: center;
+    background-color: beige;
+
+}
+#nombre{
+    text-align: right;
+    font-size: xx-large;
+}
+
+#init{
+    margin-left: 20px;
+
+
+}
+
+#barra{
+    background-color: #6c757d;
+    justify-content: center;
+}
+
+
+#Bloque {
+    padding: 50px;
+    padding-bottom: 70px;
+    background-color: beige;
+}
+
+#flex1{
+    display: flex;
+       
+    
+   
+    
+}
+#flex2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+   
+    
+}
+#flex3{
+    display: flex;
+    
+    justify-content: end;
+    
+   
+    
+}
+#flex4{
+   
+    background-color: beige;
+    padding-bottom: 40px;
+    
+   
+    
+}
+
+#fotop{
+    justify-content: start;
+    width: 200px;
+    height: auto;
+    text-align: center;
+    margin-top: 40px;
+}
+#fotoa{
+    justify-content: start;
+    width: 100px;
+    height: auto;
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+#thistorial{
+    text-align: left;  
+    padding-top: 70px;
+    padding-left: 40px;
+    Font-weight: bold;
+}
+li{
+    list-style: none;
+   
+}
+
+
+.navbar-nav{
+   
+    color: white;
+    
+}
+
+.nav-link{
+    color: white;
+    font-weight: bold;
+   
+   
+}
+  
+  .navbar-nav .nav-link:hover{
+    color: black ;
+}
+
+#historial-academico{
+    background-color: #6c757d;
+    padding-top: 30px;
+    padding-left: 100px;
+}
+
+h3{
+
+    margin: 110px;
+    color: white;
+}
+
+#cv-ti{
+    text-align: center;
+}
+
+#contacto{
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+}
+
+#foto{
+    width: 50px;
+   
+}
+
+#pporta{
+    background-color: #6c757d;
+    text-align: center;
+    padding: 10px;
+}
+#Portafolio{
+    display: flex;
+    background-color: #6c757d;
+}
+footer{
+    font-size: large; 
+    text-align: center;
+    background-color: #6c757d;
+    padding: 15px;
+}
+
+
+

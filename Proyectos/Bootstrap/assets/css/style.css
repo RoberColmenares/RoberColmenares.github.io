@@ -1,0 +1,22 @@
+footer{
+    text-align: center;
+    margin-top: 10px;
+}
+nav{
+    background-color: #28A745;
+     
+}
+form{
+    background-color: #28A745;
+
+}
+.po{
+    color: #28A745;
+    font-weight: bold;
+    font-size: large;
+    margin-left: 15px;
+
+}
+.card-footer{
+    text-align: end;
+}
