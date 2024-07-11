@@ -1,0 +1,102 @@
+i{
+    color: white;
+    font-size: 100px;
+    
+}
+.tamaño{
+    max-width: 1280px;
+    background-color: black;
+    
+   
+}
+p{
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    
+}
+.encabezado{
+    text-align: center;
+    background-color: black;
+    padding: 10px;
+    
+}
+.divf{
+    
+    display: flex ;
+    align-content: stretch;
+  
+    
+   
+}
+.divc{
+    background-color: black;
+    justify-content: space-between;
+    margin: 0;
+   
+    
+}
+.txt{
+    text-align: inherit;
+    margin: 85px;
+    padding: 50px;
+    padding-right: 15px;
+  
+
+    
+}
+.rp{
+    justify-content: left;
+    margin: 4%;
+    padding: 4%;
+    border: 4%;
+
+}
+
+#divc2{
+    display: flex;
+    background-color: #1E1A13;
+    justify-content: center;
+    padding-top: 2rem;
+
+}
+.divf2 {
+    color: white;
+    width: 20%;
+    font-size: 2rem;
+    text-align: center;
+}
+    
+
+.divf3{
+    display: flex ;
+    justify-content: center;
+    gap: 1rem;
+    padding: 50px;
+ 
+}
+.divc3{
+    background-color: black;
+    width: 100%;
+    flex-direction: row;
+    width: 1280px;
+    
+    
+}
+h2{
+    background-color: #1E1A13;
+}
+
+.c{
+    background-color: #1E1A13;   
+    text-align: center; 
+    padding: 10px;    
+    padding-top: 30px;
+}
+footer{
+    background-color: #1E1A13;
+    text-align: center;
+    padding: 40px;  
+    width: 1200px;
+}
