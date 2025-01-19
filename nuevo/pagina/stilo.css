@@ -1,0 +1,767 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  .btn1 {
+    padding: 15px 30px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 1px 1px 15px -1px black;
+    background-color: #D61937; /* Color de fondo inicial */
+    color: white;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+}
+
+.btn1:hover {
+    transform: scale(1.1); /* Hace que el botón crezca un 10% */
+    background-color: #9b1233; /* Cambia el color de fondo al hacer hover */
+    box-shadow: 2px 2px 20px -2px rgba(0, 0, 0, 0.5); /* Sombra más intensa */
+}
+
+  .container-total {
+    width: 100%;
+    margin: 0px auto; /* Centra el contenedor */
+    max-width: 1400px; /* Evita que el contenedor se expanda más allá de 1400px */
+  
+}
+
+.barra {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+  
+    left: 0;
+    
+  }
+
+  .barra .logo img{
+    max-width: 70px;
+  }
+  
+  .menu ul{
+    display: flex;
+   
+  }
+
+  .menu ul li{
+    list-style: none;
+    margin-left: 30px;
+    font-weight: 600;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+
+}
+
+
+
+  /*Main*/
+  .main{
+    background: linear-gradient(to right,  white 30%, #D61937 50%);
+    height: 60vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: end;
+    padding: 20px 20px;
+
+   
+   
+  }
+
+  
+
+.main .texto{
+    
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.main .texto h2, p{
+   
+    
+    max-width: 70%;
+   
+    
+}
+
+.main .imagen{
+    
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    
+    
+}
+.main img{ 
+    height: 400px;
+    width: 400px;
+ 
+    
+}   
+.celu {
+    display: none;
+}
+
+
+/* Seccion 1 */
+
+
+.seccion1{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 30px 0px;
+    width: 100%;
+   
+    
+}
+.container-total h1 {
+    text-align: center
+}
+
+.seccion1 .texto{
+   
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.seccion1 .logo{
+  
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+.seccion1 .logo img {
+    width: 300px;
+  
+    animation: girar 6s linear infinite; /* La animación dura 2 segundos y es infinita */
+}
+
+
+@keyframes girar {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+
+/* Seccion 2  servicios */
+
+.seccion2 {
+   
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+    width: 100%;
+   
+   
+}
+
+
+.seccion2 .imagen img{
+    height: 600px;
+  
+    
+}
+
+
+.seccion2 .imagen{
+   
+    width: 30%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding: 20px 0px;
+    
+   
+ 
+}
+
+.seccion2 .texto{
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+  
+ 
+}
+
+.seccion2 .texto .texto-info{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+
+.seccion2 .texto .texto-info h1{
+    margin:10px;
+
+}
+
+.seccion2 .beneficios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(189, 189, 189);
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3), 0px 6px 6px rgba(0, 0, 0, 0.15);
+    color: rgb(0, 0, 0);
+    padding-bottom: 20px;
+}
+
+
+
+/* Seccion 3 plannes*/
+
+.seccion3{
+    display:flex;
+    justify-content: center;
+    
+    
+   
+   
+    
+}
+
+.card-plan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    width: 33%;
+    padding: 20px 0px;
+    background-color: rgb(255, 245, 245);
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px -1px black;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Transiciones para suavizar los cambios */
+}
+
+.card-plan:hover {
+    transform: scale(1.05); /* Hace que crezca un 5% */
+    background-color: rgba(221, 206, 206, 0.8); /* Hace el color de fondo más opaco */
+    box-shadow: 2px 2px 20px -2px rgba(0, 0, 0, 0.5); /* Sombra más intensa al hacer hover */
+}
+
+
+
+.card-plan .seg1, .seg2{
+  
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+
+
+}
+
+
+
+.card-plan .seg3 {
+    
+    height: 100%;
+ 
+    padding: 0px 30px;
+    
+
+
+}
+
+.card-plan .seg1 .p{
+    font-size: xx-large;
+    margin: 0;
+}
+.card-plan .seg2 p{
+    font-weight: 300;
+    font-size: small;
+    margin: 0;
+   
+}
+
+.card-plan button {
+    padding: 10px 30px;
+    margin: 10px;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 1px 1px 15px -1px black;
+    color: white;
+    
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-plan button:hover {
+    transform: scale(1.1); /* Hace que el botón crezca un 10% */
+    background-color: #0056b3; /* Cambia el color de fondo al hacer hover */
+    box-shadow: 2px 2px 20px -2px rgba(0, 0, 0, 0.5); /* Intensifica la sombra */
+}
+
+.card-plan button:hover{
+    background-color: white;
+    color: black;    
+}
+
+.card-plan button:focus{
+    background-color: black;
+    color: white;    
+}
+.btn2{
+    background-color: rgb(189, 189, 189);
+    font-weight: 600;
+}
+
+.btn3{
+    background-color:#D61937 ;
+    font-weight: 600;
+}
+
+.btn4{
+    background-color: black;
+    font-weight: 600;
+}
+
+
+.marker1 li::marker{
+    color: rgb(189, 189, 189); /* Cambia el color del punto */
+    font-size: 1em;
+
+}
+
+.marker2 li::marker{
+    color: #D61937; /* Cambia el color del punto */
+    font-size: 1em;
+
+}
+
+.marker3 li::marker{
+    color: rgb(0, 0, 0); /* Cambia el color del punto */
+    font-size: 1em;
+
+}
+
+
+
+
+
+/* Footer */
+
+.Footer {
+   
+    display: flex;
+  
+    justify-content: space-around;
+    background-color: #D61937;
+    color: white;
+    margin-top: 0px;
+    
+}
+
+.Footer h2{
+  text-align: center;
+}
+
+
+.Footer .seg1f{
+  
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.Footer .seg2f{
+  
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.Footer .seg3f{
+ 
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.Footer .seg1f .redes{
+ 
+    width: 200px;
+  
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+.Footer .seg2f .ubi{
+  
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+.Footer .seg3f .links{
+   
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+      
+}
+
+.Footer  a{
+    text-decoration: none;
+    color: inherit;   
+}
+
+.Footer p{
+    margin: 5px; 
+      
+}
+
+.Footer .redes i{
+    font-size: xx-large;
+    margin:10px;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Footer .redes i:hover{
+    transform: scale(1.9);
+    font-size: xx-large;
+    margin:10px
+}
+
+
+
+.seg3 ul {
+    display: block; /* Mostrar lista por defecto */
+}
+
+.seg3 button{
+    display: none;
+}
+  
+
+
+
+
+
+
+@media (max-width: 1020px) {
+
+    .main{
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(to right,  white 30%, #D61937 50%);
+        height: 97vh;
+    }
+
+    .main .texto {
+        width: 50%;
+    }
+    .main .texto p{
+        display: none;
+        
+    }
+
+    .main .imagen{
+        height: 100%;
+        width: 50%;
+        margin-left: 0px;
+    
+        
+        
+        justify-content:center; 
+        
+    }
+
+    .main img{ 
+        height: 400px;
+        width: 350px;
+     
+        
+    } 
+    .btn1{
+        margin-right: 50px;
+    }
+
+    .seccion2{
+        margin: 40px 0px;
+    }
+    .seccion2 .imagen{
+        display: none;
+    }
+
+    .seccion2 .texto{
+        width: 80%;
+ 
+    }
+    .seccion2 .texto button{
+        margin-left: 50px;
+
+ 
+    }
+    .seccion2 .beneficios {
+        margin-top: 30px;
+        padding: 0px 10px;
+        width: 90%;
+    }
+
+    .card-plan{
+        padding: 0;
+        margin: 10px;
+        
+    }
+    .card-plan .seg3 {
+    
+        
+        padding: 0px 10px;
+        
+    
+    
+    }
+    .pantallas {
+        display: none; /* Menú oculto por defecto */
+      }
+      
+      .pantallas.open {
+        display: block; /* Mostrar menú cuando la clase "open" esté activa */
+      }
+
+}
+  @media (max-width: 768px) {
+      
+      
+      
+    .pantallas {
+        margin-top: 10px;
+        display: none; /* Ocultar inicialmente */
+        position: absolute; /* Se posiciona debajo de la barra */
+        top: 60px; /* Ajusta según la altura de la barra */
+        left: 0;
+        width: 100%; /* Ocupa todo el ancho */
+        background-color: white; /* Fondo del menú desplegable */
+        padding: 10px 0;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+      }
+    
+      .pantallas.open {
+        display: block; /* Muestra el menú cuando está abierto */
+      }
+    
+      .pantallas ul {
+        list-style: none; /* Sin viñetas */
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        text-align: center; /* Centra los enlaces */
+      }
+    
+      .pantallas li {
+        margin: 10px 0; /* Espaciado entre enlaces */
+      }
+    
+      .pantallas a {
+        text-decoration: none; /* Sin subrayado */
+        color: #333; /* Color del texto */
+        font-size: 18px; /* Tamaño del texto */
+      }
+    
+      .pantallas a:hover {
+        color: #007bff; /* Cambia el color al pasar el cursor */
+      }
+    
+      .celu {
+        display: block; /* Asegúrate de que el botón sea visible */
+        font-size: 30px; /* Tamaño del ícono */
+        cursor: pointer;
+      }
+    
+      .celu i {
+  transition: transform 0.3s ease;
+}
+
+.celu.open i {
+  transform: rotate(90deg); /* Gira el ícono al abrir el menú */
+}
+
+
+
+    
+    
+    .main {
+        
+        background: linear-gradient(to bottom, white 35%, #D61937 55%);
+        flex-direction: column;
+        height: 100vh;
+        justify-content: space-evenly;
+        padding: 0px 20px;
+        margin: 0;
+        
+    }
+    
+    .main img{ 
+        height: 300px;
+        width: 300px;
+        
+        
+    } 
+    
+    .main .imagen{
+        height: 50%;
+        align-items: end;
+        
+        
+    }
+    .main .texto {
+        margin-top: 50px;
+        
+        width: 100%;
+        
+    }
+    .main .texto h2, p{
+        
+        
+        max-width: 80%;
+        
+        
+    }
+    
+    .seccion1 {
+        flex-direction: column;
+        
+    }
+    
+    .seccion1 .texto{
+        width: 90%;
+    }
+    
+    .seg3 {
+        text-align: center; 
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+      }
+      
+      .seg3 .toggle-info-btn {
+        display: block; 
+        background-color: #ffffff;
+        color: black;
+        border: none;
+        padding: 10px;
+        border-radius: 15px;
+        cursor: pointer;
+        margin-bottom: 10px; 
+        text-align: center; 
+        width: 150px; 
+      }
+      
+      .seg3 ul {
+        display: none; 
+         
+        
+        list-style: disc; 
+        text-align: left;
+      }
+      
+  
+   
+    .seccion3 {
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+      
+        height: 100%;
+       
+    }
+
+    .card-plan {
+       
+        min-width: 80%;
+        margin: 20px 0px;
+       
+    }
+
+    .Footer .seg2f{
+        margin-top: 10px;
+    }
+    .Footer .seg3f{
+ 
+       display: none;
+    }
+    .card-plan h2, p, li, button {
+        font-size: 0.9em;
+    }   
+    
+    
+}
+
+@media (max-width: 460px) {
+    
+    .Footer {
+       flex-direction: column;
+    }
+}
+
+
+@media (max-height: 615px) {
+    .main img{ 
+        height: 200px;
+        width: 400px;
+     
+        
+    } 
+    
+}
+@media (max-height: 500px) {
+    .main img{ 
+       display: none;
+        
+    } 
+    
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- Enlaces de fuentes -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+AU+SA:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="inicio">
+        <div >
+            <h1>RC</h1>
+            <h1>Falcón: Donde el sol, la arena y el mar se unen en un paraíso único</h1>
+            <p>Descubre un rincón mágico en Venezuela, donde la naturaleza y la historia convergen para ofrecerte experiencias inolvidables. Desde las imponentes dunas de Coro, reconocidas como Patrimonio de la Humanidad por la UNESCO, hasta las aguas cristalinas de Los Roques y Adícora, este estado es un paraíso para los amantes del ecoturismo, la aventura y el relax.</p>
+            <a href="#inicio2"><button>Empezemos</button></a>
+        </div>
+    </header>
+
+    <!-- Sección de entrada -->
+    <div class="entrada" id="inicio2">
+        <div class="entrada-info">
+            <p>Falcón, un estado venezolano bañado por el Caribe, ofrece una diversidad turística que va desde los deslumbrantes Médanos de Coro hasta la serena belleza del Parque Nacional Morrocoy.</p>
+            <p>Es un área privilegiada por la naturaleza y contribuye con cuatro espacios al Sistema Nacional de Parques, entre los que destacan un monumento natural y un parque de recreación</p>
+        </div>
+        <div class="entrada-info">
+            <img src="assets/3.jpg" alt="Imagen de Falcón">
+        </div>
+    </div>
+
+    <div class="entrada">
+        <div class="entrada-info">
+            <img src="assets/2.jpeg" alt="Imagen de Falcón">
+        </div>
+        <div class="entrada-info">
+            
+            <p>Dsisfruta de distintos paisajes. Conoce la calidez de sus pueblos, sumérgete en su cultura local Ya sea para una aventura en la naturaleza o un descanso en sus hermosos paisajes,</p>
+           <p>Además de ser un paraíso para los turistas, las playas de Morrocoy funcionan como reserva marina y es uno de los focos principales de la fauna única del trópico, como las garzas rosadas y los flamencos.</p>
+        </div>
+    </div>
+
+    <div class="playaaa">
+        <p>Tierra de paisajes y pueblos llenos de encanto y tradición! Cada rincón guarda historias, sabores y sonrisas que te harán sentir como en casa. Ven y déjate conquistar por su magia.</p>
+        
+    </div>
+
+    <!-- Galería de imágenes -->
+    <div class="contenedortotal">
+        <div class="contenedor">
+            <div class="gallery-thumbnails">
+                <div>
+                    <img src="assets/Morrocoy.png" alt="Imagen 1" onclick="openCollection('gallery1', 0)">
+                </div>
+    
+                <div class="gallery-thumbnails-mini">
+                    <div class="mini">
+                        <img src="assets/cerro.jpg" alt="Imagen 1" onclick="openCollection('gallery1', 1)">
+                        <img src="assets/Hueque.jpg" alt="Imagen 4" onclick="openCollection('gallery1', 2)">
+                        <img src="assets/Peninsula.jpg" alt="Imagen 4" onclick="openCollection('gallery1', 3)">
+                    </div>
+                </div>
+            </div>
+    
+            
+    
+            
+    
+            <div class="info-contenedor">
+                
+                <p>Falcón te invita a descubrir sus maravillas naturales el Parque Nacional Morrocoy, con sus islas y aguas cristalinas las imponentes Cataratas del Hueque, un espectáculo de la naturaleza. El Cerro Santana, desde donde podrás disfrutar de vistas panorámicas increíbles.  <br> Todo esto, rodeado de la belleza única de la península, un paraíso natural que no puedes dejar de explorar.</p>
+                <button class="galery" onclick="openCollection('gallery1')">Ver Fotos</button>
+                
+            </div>
+        </div>
+    
+        <div class="contenedor">
+
+            <div class="info-contenedor">
+               
+                <p>Recorre sus pueblos mágicos, como Santa Ana de Coro, con su encanto colonial, y Cabo San Román, donde el faro se alza entre paisajes únicos. Adícora, ideal para el windsurf, y los Médanos de Coro, con sus imponentes dunas, completan este viaje lleno de historia y belleza. ¡Ven y descubre la magia de Falcón!</p>
+            </div>
+
+            <div class="gallery-thumbnails">
+                <div>
+                    <img src="assets/mdanos.jpg" alt="Imagen 1" onclick="openCollection('gallery2', 0)">
+                </div>
+                <button class="galery" onclick="openCollection('gallery2')">Ver Fotos</button>
+    
+                <div class="gallery-thumbnails-mini">
+                    <div class="mini">
+                        <img src="assets/adicora 2.jpg" alt="Imagen 1" onclick="openCollection('gallery2', 1)">
+                        <img src="assets/puebloS.jpg" alt="Imagen 4" onclick="openCollection('gallery2', 2)">
+                        <img src="assets/cabo.jpg" alt="Imagen 4" onclick="openCollection('gallery2', 3)">
+                    </div>
+                </div>
+            </div>
+    
+            
+    
+            
+    
+            
+        </div>
+    
+       
+
+    <!-- Información adicional -->
+    
+
+    <!-- Modal para mostrar imágenes ampliadas -->
+    <div id="image-modal" class="modal">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <button class="nav-btn left" onclick="navigate(-1)">&#8249;</button>
+        <img id="modal-image" src="assets/3.jpg" alt="Imagen expandida">
+        <button class="nav-btn right" onclick="navigate(1)">&#8250;</button>
+        
+    </div>
+
+    <div class="playaaa">
+        <p>"¡Falcón, donde el sol besa las playas más hermosas! Un paraíso que no solo se ve, ¡se vive! Ven y descubre la magia de sus aguas cristalinas... porque estar aquí y no probarlas, ¡es imperdonable!" 🌊☀️</p>
+    </div>
+
+    <div class="contenedor-playas"> 
+        <div class="gallery-thumbnails">
+            
+                <div class="cardplaya">
+                    <img src="assets/villamarina.jpg" alt="Imagen 1" onclick="openCollection('gallery3', 0)"> 
+                    <p>Villa marina</p>
+                </div>  
+                <div class="cardplaya">
+                    <img src="assets/tiraya.jpg" alt="Imagen 1" onclick="openCollection('gallery3', 1)"> 
+                    <p>Tiraya</p>
+                </div> 
+                <div class="cardplaya">
+                    <img src="assets/cayosombrero1.jpg" alt="Imagen 1" onclick="openCollection('gallery3', 2)"> 
+                    <p>Cayo Sombrero</p>
+                </div> 
+                <div class="cardplaya">
+                    <img src="assets/matagorda.jpg" alt="Imagen 1" onclick="openCollection('gallery3', 3)"> 
+                    <p>Mata gorda</p>
+                </div> 
+                <div class="cardplaya">
+                    <img src="assets/adicorap.jpeg" alt="Imagen 1" onclick="openCollection('gallery3', 4)"> 
+                    <p>Adicora</p>
+                </div> 
+                <div class="cardplaya">
+                    <img src="assets/Bocadaro.jpg" alt="Imagen 1" onclick="openCollection('gallery3', 5)"> 
+                    <p>Boca de Aroa</p>
+                </div> 
+                                
+        </div>
+    </div>
+
+
+   
+
+    <!-- Footer -->
+    <footer>
+       
+        <div>
+            <h1>RC</h1>
+            <p>"Gracias por visitarnos y descubrir un poco de Falcón, donde las playas y paisajes susurran historias y la brisa te invita a volver. No te pierdas la oportunidad de explorar este paraíso que siempre tiene algo nuevo que ofrecer. ¡Te esperamos de vuelta pronto!"</p> 
+            <a href="#inicio"><button>Volver al inicio</button> </a>
+        </div>
+        <div >
+            
+        </div>
+       
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+    
+</body>
+</html>
