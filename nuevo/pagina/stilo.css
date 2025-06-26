@@ -40,6 +40,7 @@ body {
     width: 100%;
     position: fixed;
     background-color: white;
+    z-index: 50;
   
     left: 0;
     
@@ -564,9 +565,7 @@ body {
     
     
     }
-    .pantallas {
-        display: none; /* Menú oculto por defecto */
-      }
+
       
       .pantallas.open {
         display: block; /* Mostrar menú cuando la clase "open" esté activa */
